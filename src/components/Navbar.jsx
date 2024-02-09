@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from "react";
 import { Link } from 'react-scroll';
+import Button from "../layouts/Button";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Contact from "../models/Contact";
 
 const Navbar = () => {
+    const [menu, setMenu] = useState(false);
+    const [showForm, setShowForm] = useState(false);
+
     return (
         <div className=" fixed w-full z-10 text-white">
             <div>
