@@ -3,9 +3,9 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
     return (
-        <div>
+        <div className=" fixed w-full z-10 text-white">
             <div>
-                <div>
+                <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-backgroundColor shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
                     <div className=" flex flex-row items-center cursor-pointer">
                         <Link
                             to="home"
