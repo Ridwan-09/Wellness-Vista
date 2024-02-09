@@ -10,8 +10,21 @@ const Navbar = () => {
 
     const handleChange = () => {
         setMenu(!menu);
-      };
-    
+    };
+
+    const closeMenu = () => {
+        setMenu(false);
+    };
+
+    const openForm = () => {
+        setShowForm(true);
+        setMenu(false);
+    };
+
+    const closeForm = () => {
+        setShowForm(false);
+    };
+
     return (
         <div className=" fixed w-full z-10 text-white">
             <div>
@@ -92,6 +105,59 @@ const Navbar = () => {
                             <AiOutlineMenu size={28} onClick={handleChange} />
                         )}
                     </div>
+                </div>
+                <Link
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className=" hover:text-hoverColor transition-all cursor-pointer"
+                    onClick={closeMenu}
+                >
+                    Home
+                </Link>
+                <Link
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className=" hover:text-hoverColor transition-all cursor-pointer"
+                    onClick={closeMenu}
+                >
+                    About Us
+                </Link>
+                <Link
+                    to="services"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className=" hover:text-hoverColor transition-all cursor-pointer"
+                    onClick={closeMenu}
+                >
+                    Services
+                </Link>
+                <Link
+                    to="doctors"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className=" hover:text-hoverColor transition-all cursor-pointer"
+                    onClick={closeMenu}
+                >
+                    Doctors
+                </Link>
+                <Link
+                    to="blog"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className=" hover:text-hoverColor transition-all cursor-pointer"
+                    onClick={closeMenu}
+                >
+                    Blog
+                </Link>
+                <div>
+
                 </div>
             </div>
         </div>
