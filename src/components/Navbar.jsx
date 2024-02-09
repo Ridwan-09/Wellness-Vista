@@ -6,17 +6,17 @@ const Navbar = () => {
         <div>
             <div>
                 <div>
-                    <div>
+                    <div className=" flex flex-row items-center cursor-pointer">
                         <Link
                             to="home"
                             spy={true}
                             smooth={true}
                             duration={500}>
-                            <h1>WellnessVista</h1>
+                            <h1 className=" text-2xl font-semibold">WellnessVista.</h1>
                         </Link>
                     </div>
 
-                    <nav>
+                    <nav className=" hidden lg:flex flex-row items-center text-lg font-medium gap-8">
                         <Link
                             to="home"
                             spy={true}
