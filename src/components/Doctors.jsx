@@ -82,7 +82,15 @@ const Doctors = () => {
     return (
         <div>
             <div>
-
+                <div>
+                    <h1 className=" text-4xl font-semibold text-center lg:text-start">
+                        Our Doctors
+                    </h1>
+                    <p className=" mt-2 text-center lg:text-start">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
+                        quidem.
+                    </p>
+                </div>
             </div>
         </div>
     );
