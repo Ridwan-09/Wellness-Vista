@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
 import Doctors from './components/Doctors';
+import Blogs from './components/Blogs';
 
 const App = () => {
   return (
@@ -25,6 +26,10 @@ const App = () => {
 
         <div id='doctors'>
           <Doctors></Doctors>
+        </div>
+
+        <div id='blogs'>
+          <Blogs></Blogs>
         </div>
       </main>
 
