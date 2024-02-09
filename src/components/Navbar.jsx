@@ -63,6 +63,25 @@ const Navbar = () => {
                             Blog
                         </Link>
                     </nav>
+
+                    <div className=" hidden lg:flex">
+                        <button
+                            className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+                            onClick={openForm}
+                        >
+                            Contact Us
+                        </button>
+                    </div>
+
+                    {showForm && <Contact closeForm={closeForm} />}
+
+                    <div className=" lg:hidden flex items-center">
+                        {menu ? (
+                            <AiOutlineClose size={28} onClick={handleChange} />
+                        ) : (
+                            <AiOutlineMenu size={28} onClick={handleChange} />
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
