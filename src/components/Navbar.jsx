@@ -8,6 +8,22 @@ const Navbar = () => {
     const [menu, setMenu] = useState(false);
     const [showForm, setShowForm] = useState(false);
 
+    const Navbar = () => {
+        const [menu, setMenu] = useState(false);
+        const [showForm, setShowForm] = useState(false);
+      
+        const handleChange = () => {
+          setMenu(!menu);
+        };
+      
+        const closeMenu = () => {
+          setMenu(false);
+        };
+      
+        const openForm = () => {
+          setShowForm(true);
+          setMenu(false);
+        };
     return (
         <div className=" fixed w-full z-10 text-white">
             <div>
