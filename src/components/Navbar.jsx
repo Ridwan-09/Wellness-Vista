@@ -34,15 +34,6 @@ const Navbar = () => {
                             <h1 className=" text-2xl font-semibold">WellnessVista.</h1>
                         </Link>
                     </div>
-                    <div className=" hidden lg:flex flex-row items-center text-lg font-medium gap-8">
-                        <Link
-                            to="home"
-                            spy={true}
-                            smooth={true}
-                            duration={500}>
-                            <h1 className=" text-2xl font-semibold">WellnessVista.</h1>
-                        </Link>
-                    </div>
 
                     <nav className=" hidden lg:flex flex-row items-center text-lg font-medium gap-8">
                         <Link
@@ -166,9 +157,6 @@ const Navbar = () => {
                     >
                         Blog
                     </Link>
-                </div>
-
-                <div>
 
                     <div className=" lg:hidden">
                         <button
@@ -178,7 +166,6 @@ const Navbar = () => {
                             Contact Us
                         </button>
                     </div>
-
                 </div>
             </div>
         </div>
